@@ -1,0 +1,64 @@
+﻿@model Blog.Models.Post
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.post_Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_By)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_By)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.post_preview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.post_preview)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

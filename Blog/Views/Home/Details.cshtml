@@ -1,0 +1,49 @@
+﻿@model Blog.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Title)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Content)
+        </dd>
+
+        
+         @if (Model.Images.Any(f => f.Image_Type == Blog.Models.ImageType.Avatar))
+        {
+            <dt>
+                Image
+            </dt>
+            <dd>
+                <img src="~/File?id=@Model.Images.First(f => f.Image_Type == Blog.Models.ImageType.Avatar).Image_Id" alt="avatar" height="200px" width="300px" />
+            </dd>
+        }
+
+
+
+        <dd>
+            @Html.DisplayFor(model => model.post_Date)
+        </dd>
+
+
+
+        <dd>
+            @Html.DisplayFor(model => model.created_By)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
