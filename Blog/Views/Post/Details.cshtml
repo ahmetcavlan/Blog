@@ -1,13 +1,6 @@
 ﻿@model Blog.Models.Post
 
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
-
 <div>
-    <h4>Post</h4>
     <hr />
     <dl class="dl-horizontal">
 
@@ -41,7 +34,7 @@
                 Image
             </dt>
             <dd>
-                <img src="~/File?id=@Model.Images.First(f => f.Image_Type == Blog.Models.ImageType.Avatar).Image_Id" alt="avatar" height="200px" width="300px" />
+                <img src="~/File?id=@Model.Images.First(f => f.Image_Type == Blog.Models.ImageType.Avatar).Image_Id" alt="avatar" height="175px" width="250px" />
             </dd>
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -9,11 +10,17 @@ namespace Blog.Models
     public class Post
     {
         [Key]
-        public int post_Id { get; set; }  
+        
+        public int post_Id { get; set; }
+        [DisplayName("Content")]
         public string post_Content { get; set; }
+        [DisplayName("Title")]
         public string post_Title { get; set; }
+        [DisplayName("Created By")]
         public string created_By { get; set; }
+        [DisplayName("Date")]
         public DateTime post_Date { get; set; }
+        [DisplayName("Preview")]
         public string post_preview { get; set; }
         public virtual ICollection<Image> Images { get; set; }
         public virtual ICollection<ImagePath> ImagePaths { get; set; }

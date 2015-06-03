@@ -87,7 +87,7 @@ namespace Blog.Controllers
             return View();
         }
 
-        // POST: Student/Create
+       
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -128,7 +128,7 @@ namespace Blog.Controllers
         }
 
 
-        // GET: Student/Edit/5
+        
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -143,7 +143,7 @@ namespace Blog.Controllers
             return View(post);
         }
 
-        // POST: Student/Edit/5
+       
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost, ActionName("Edit")]
@@ -194,7 +194,7 @@ namespace Blog.Controllers
             return View(postToUpdate);
         }
 
-        // GET: Student/Delete/5
+        
         public ActionResult Delete(int? id, bool? saveChangesError = false)
         {
             if (id == null)
@@ -213,7 +213,7 @@ namespace Blog.Controllers
             return View(post);
         }
 
-        // POST: Student/Delete/5
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

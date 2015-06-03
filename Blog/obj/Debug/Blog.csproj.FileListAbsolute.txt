@@ -54,6 +54,6 @@ C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\bin\Microsoft.Owin
 C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
 C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\obj\Debug\Blog.dll
 C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\obj\Debug\Blog.pdb
+C:\Users\Acan\documents\visual studio 2013\Projects\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache

@@ -7,8 +7,8 @@
 
 @{
 
-    <div style="border:1px solid black;padding:25px;">
-        <h1 style="text-align:center">All Post </h1>
+    <div style="padding:25px;">
+        <h1 style="text-align:center">Posts</h1>
 
         @foreach (var item in Model)
         {
@@ -18,8 +18,10 @@
                     @item.post_preview
                     @Html.ActionLink(" ...details", "Details", new { id = item.post_Id })
                 </p>
-                <strong> Author : @item.created_By </strong>
-            </div>
+                <p style="text-align:right">
+                    <strong> Author : @item.created_By </strong>
+                </p>
+                </div>
         }
     </div>
 }

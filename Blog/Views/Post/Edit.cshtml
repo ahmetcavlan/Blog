@@ -46,15 +46,15 @@
         @if (Model.Images.Any(f => f.Image_Type == Blog.Models.ImageType.Avatar))
         {
             <div class="form-group">
-                <span class="control-label col-md-2"><strong>Current Avatar</strong></span>
+                <span class="control-label col-md-2"><strong>Image</strong></span>
                 <div class="col-md-10">
-                    <img src="~/File?id=@Model.Images.First(f => f.Image_Type == Blog.Models.ImageType.Avatar).Image_Id" alt="avatar" height="200px" width="300px" />
+                    <img src="~/File?id=@Model.Images.First(f => f.Image_Type == Blog.Models.ImageType.Avatar).Image_Id" height="175px" width="250px" />
                 </div>
             </div>
         }
 
         <div class="form-group">
-            @Html.Label("Avatar", new { @class = "control-label col-md-2" })
+            @Html.Label(" ", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <input type="file" id="Avatar" name="upload" />
             </div>
